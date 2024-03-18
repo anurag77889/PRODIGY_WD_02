@@ -50,8 +50,8 @@
         
     }
     document.querySelector('#Start').addEventListener('click',function(){
-        interVal = setInterval(startTimer, 1000);
-    });
+        interVal = setInterval(startTimer, 1000,);
+    }, {once: true});
     document.querySelector('#Stop').addEventListener('click', function() {
             clearInterval(interVal); 
         });
