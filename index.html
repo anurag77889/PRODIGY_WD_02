@@ -51,7 +51,6 @@
     }
     document.querySelector('#Start').addEventListener('click',function(){
         interVal = setInterval(startTimer, 1000,);
-        this.removeEventListener('click', arguments.callee);
     });
     document.querySelector('#Stop').addEventListener('click', function() {
             clearInterval(interVal); 
